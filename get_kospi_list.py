@@ -1,7 +1,7 @@
 import pandas as pd
 
 # 코스피 종목 리스트 불러와서 보통주만 필터링 한다음, 단축코드에 A를 붙여주기
-df = pd.read_excel("kospi_list_1.xlsx")
+df = pd.read_excel("kospi_list.xlsx")
 kospi_df = df[df["주식종류"] == "보통주"]
 
 a_codes = "A" + kospi_df["단축코드"]
